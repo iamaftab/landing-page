@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+li, a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(243, 233, 174);
+    align-items: center;
+    padding: 7px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+
+}
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    padding: 0.1em;
+    color: deeppink;
+}
+.nav-links li a:hover{
+    color:white;
+    padding: 0.25rem 0.4rem;
+    border: none;
+    border-radius: 80px;
+    background-color: rgba(235, 66, 100, 1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.signup-Btn, .signup-Btn > ul > li > a {
+    color: white;
+    padding: 0.3rem 0.15rem;
+    border: none;
+    border-radius: 80px;
+    background-color: rgba(235, 66, 100, 1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.signup-Btn:hover, .signup-Btn > ul > li > a:hover {
+    padding: 0.3rem 0.15rem;
+    border: none;
+    border-radius: 80px;
+    color: deeppink;
+    background-color: rgba(245, 239, 240, 0.8);
+}
