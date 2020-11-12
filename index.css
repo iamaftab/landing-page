@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: Montserrat;
 }
-li, a {
+li{
+    list-style: none;
+}
+a {
     text-decoration: none;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     background-color: rgb(243, 233, 174);
     align-items: center;
     padding: 7px 10%;
@@ -22,8 +25,6 @@ li, a {
 
 .logo {
     cursor: pointer;
-    margin-right: auto;
-
 }
 .nav-links {
     list-style: none;
@@ -38,6 +39,7 @@ li, a {
     transition: all 0.3s ease 0s;
     padding: 0.1em;
     color: deeppink;
+    font-size: 18px;
 }
 .nav-links li a:hover{
     color:white;
@@ -49,21 +51,30 @@ li, a {
     transition: all 0.3s ease 0s;
 }
 
-.signup-Btn, .signup-Btn > ul > li > a {
+.signup-Btn{
     color: white;
-    padding: 0.3rem 0.15rem;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 0.5rem 0.15rem;
+    width: 90px;
+    text-align: center;
     border: none;
-    border-radius: 80px;
+    border-radius: 100px;
     background-color: rgba(235, 66, 100, 1);
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+.signup-Btn li a {
+    color: white;
+}
+.signup-Btn li a:hover {
+    color:deeppink;
+}
 
-.signup-Btn:hover, .signup-Btn > ul > li > a:hover {
+.signup-Btn:hover{
     padding: 0.3rem 0.15rem;
     border: none;
     border-radius: 80px;
-    color: deeppink;
     background-color: rgba(245, 239, 240, 0.8);
 }
 .section {
@@ -76,7 +87,7 @@ li, a {
 }
 .header-img {
     padding: 2rem;
-    margin: 3em;
+    margin-right: 3em;
 
 }
 .header-title-section {
@@ -108,6 +119,7 @@ li, a {
     padding: 10px;
 }
 .learn-more-section{
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 600;
     width: 180px;
@@ -118,6 +130,9 @@ li, a {
 .learn-more {
     color: #fff !important;
 }
+.learn-more-section:hover {
+    background-color: #7157e6!important;
+}
 .product-section {
     position: relative;
     display: flex;
@@ -126,10 +141,63 @@ li, a {
     /* padding-top: 25px; */
     padding-bottom: 25px;
 }
-.product-item > img , .product-title{
-    padding: 10px 0 10px 10px;
+.product-item{
+    padding: 10px;
 }
 .product-details {
-    margin: 0 10px;
     line-height: 1.5rem;
+}
+.product-sub-title {
+    margin-top: 100px;
+}
+.text-left {
+    text-align: left;
+}
+.service-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 2;
+    color: #303669;
+}
+.accordin {
+    background: white;
+    max-width: 400px;
+    margin-top: 30px;
+}
+.accordin .contentBox {
+    position: relative;
+    margin: 10px 0;
+    
+}
+.accordin .contentBox .label {
+    position: relative;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+    fon
+}
+.accordin .contentBox .label::before {
+    content:'+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordin .contentBox.active .label::before {
+    content:'-';
+}
+.accordin .contentBox .content {
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordin .contentBox.active .content {
+    height: auto;
+    padding: 10px;
 }
