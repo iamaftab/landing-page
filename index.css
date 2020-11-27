@@ -114,6 +114,25 @@ a {
     line-height: 1.5;
     padding: 10px;
 }
+@media screen and (max-width: 960px) {
+    .header{
+        flex-direction: column;
+    }
+    .header-img > img {
+        height: 300px;
+    }
+    .product-section{
+        flex-direction: column;
+        margin: 5px !important;
+        padding: 0 !important;
+    }
+    .product-item{
+        padding: 0 !important;
+    }
+    .product-title{
+        box-sizing: border-box;
+    }
+  }
 .learn-more-section{
     margin-top: 20px;
     font-size: 18px;
@@ -144,7 +163,7 @@ a {
     line-height: 1.5rem;
 }
 .product-sub-title {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .text-left {
     text-align: left;
